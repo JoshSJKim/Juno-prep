@@ -100,7 +100,8 @@
   <meta http-equv="X_US_Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Title will not show on the browser page, but on the tab </title>
-  <link rel="stylesheet" href="styles.css"> <!-- This hasn't been covered yet, but it is a link to a separate CSS file -->
+  <link rel="stylesheet" href="styles.css"> 
+  <!-- This hasn't been covered yet, but it is a link to a separate CSS file -->
 </head>
 <body>
   <h1> The Content </h1>
@@ -108,3 +109,14 @@
 </body>
 </html>
 ```
+
+- The base structure, or `boilerplate` can be added in code editors, such as vscode, by entering `!` and `tab` on an `html` template.
+- It is an easy shortcut, but all developers should be familiar with the base structure.
+
+  - `<!DOCTYPE html>`: Indicates to the browser that the file is written in HTML5 (latest version). Must be included at the very head of every HTML document.
+  - `<html lang="en"></html>`: All contents of the html code are 'nested' in the `<html>` element. It also specifies the language with the `lang` attribute.
+  - `<head></head>`: The `head` element does not appear on the browser. It specifies the site information to the browser.
+  - `<meta>`: These tags provide specific information about the website. Notice that it is a `self-closing` tag.
+  - `<title></title>`: Short title of the website that will appear on the tab of the browser page.
+  - `<body></body>`: Everything visible on the website will be 'nested' in the body element.
+
