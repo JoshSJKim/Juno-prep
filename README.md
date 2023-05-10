@@ -42,3 +42,32 @@
 - Front end web developers write code for web browsers to read.
 - It is crucial to learn how to communicate with browsers.
   - Since browsers are subject to change frequently, it is the web developer's responsibility to respond to those changes.
+
+## Keeping Organized as a Developer
+
+### Naming Files and Project Folders
+
+- Developers deal with many projects, and each project has many files and folders, of which many have the same name (ex. index.html).
+- It is crucial to maintain an organized file system since these files and folders will be shared with other developers as well.
+
+#### No Spaces!
+
+- Folder names shall not have spaces. It'll only cause problems down the line.
+- Use `camelCase`, `kebab-case`, or `underscore_case`
+- Whatever you use, consistency is key.
+- It is important to communicate with other developers to maintain consistency.
+
+### Development Workspace
+
+- Working on multiple projects can get out of control without proper management.
+- Each project will have `index.html` (note that there should be only one of these for every project), and folders named `styles` and `scripts`.
+
+- Create `sites` or `websites` at the root user folder of your computer.
+- Organize the folders for projects of different categories.
+- Apply a numbering system that represent project ID or dates.
+- Organize in a manner that is scalable and makes sense to you
+
+- DO NOT save your folders on a cloud drive. Make sure it is saved on the local drive.
+
+- Lastly, close the files that you are not working on.
+- Practice `tab minimalism` across text editors and browsers.
