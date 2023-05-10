@@ -9,12 +9,19 @@
 		header {
 			background-color: lavenderblush;
 		}
+
 		h1 {
 			font-size: 60px;
 		}
+
 		p {
 			font-weight: bold;
-			color: darkcyan;
+			font-style: italic;
+			color: rgb(35, 61, 212);
+		}
+
+		h1, p {
+			text-align: center;
 		}
 	</style>
 </head>
@@ -22,7 +29,7 @@
 	<header>
 		<h1>Hello World!</h1>
 	</header>
-	<p>Les gitit</p>
+	<p>Les git-it</p>
 	
 </body>
 </html>

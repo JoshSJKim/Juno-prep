@@ -12,7 +12,7 @@
 
 - Websites are built on three primary languages: HTML, CSS, and JavaScript.
   - HTML (Hyper Text Markup Language): The content (words, images, etc.)
-  - CSS (Cascading StyleSheets): The framework of the site. "Brick and mortar". Design, color, size, position, layout, etc.
+  - CSS (Cascading StyleSheets): Design, color, size, position, layout, etc.
   - JavaScript (JS): User interaction, functional aspect.
 
 ### What happens when you visit a webpage?
@@ -43,6 +43,8 @@
 - It is crucial to learn how to communicate with browsers.
   - Since browsers are subject to change frequently, it is the web developer's responsibility to respond to those changes.
 
+---
+
 ## Keeping Organized as a Developer
 
 ### Naming Files and Project Folders
@@ -50,7 +52,7 @@
 - Developers deal with many projects, and each project has many files and folders, of which many have the same name (ex. index.html).
 - It is crucial to maintain an organized file system since these files and folders will be shared with other developers as well.
 
-#### No Spaces!
+#### No Spaces
 
 - Folder names shall not have spaces. It'll only cause problems down the line.
 - Use `camelCase`, `kebab-case`, or `underscore_case`
@@ -71,3 +73,38 @@
 
 - Lastly, close the files that you are not working on.
 - Practice `tab minimalism` across text editors and browsers.
+
+---
+
+## Intro to HTML
+
+- Hyper Text Markup Language
+- Standard language used to create web pages.
+- When HTML file is opened in a browser, the code is interpreted visually or audibly.
+
+- Think of HTML as the framework of a building.
+- It creates the structure of the content.
+- The design aspect is a whole other game (CSS).
+
+### Base HTML Structure
+
+- All websites require a base structure, or a 'skeleton'.
+
+- Current standard is shown below.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equv="X_US_Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Title will not show on the browser page, but on the tab </title>
+  <link rel="stylesheet" href="styles.css"> <!-- This hasn't been covered yet, but it is a link to a separate CSS file -->
+</head>
+<body>
+  <h1> The Content </h1>
+  <p> May include images, text, forms for submission, etc.</p>
+</body>
+</html>
+```
