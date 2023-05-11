@@ -170,3 +170,11 @@ Very Important!
 
 - `<!-- comment here -->` is the commenting syntax for HTML.
 - Use `command` + `/` for shortcut
+
+### Attributes
+
+- Add attributes to HTML elements for more robust and dynamic use.
+- Attributes are added to the opening tag of an element to define class, id, type, value, etc.
+
+### Setting Up an HTML File
+
