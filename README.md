@@ -120,3 +120,38 @@
   - `<title></title>`: Short title of the website that will appear on the tab of the browser page.
   - `<body></body>`: Everything visible on the website will be 'nested' in the body element.
 
+### HTML Syntax
+
+- Set of rules that make up a language.
+- The rules must be followed in order for the language to make sense for interaction.
+
+- HTML is made up of `elements` that describe content.
+- Elements are created by wrapping the contents in `tags`.
+- Elements typically have an opening and a closing tag.
+- The content wrapped inside the tags will be displayed on the browser page.
+- There are also `self-closing` tags that do not require a closing tag.
+
+### Creating Elements
+
+`<h1>Hello World!</h1>`
+
+- Opening tag contains the name (or type) of the element.
+- Anything that comes after the opening tag is the content.
+- The closing tag must correspond with the type of the opening tag with an added 'forward slash'.
+
+- Element: Structural component of a website that describes and contains content
+- Tag: The opening and closing portion of element that wraps the content
+
+### Separation of Content and Style
+
+Very Important!
+
+- When elements are added to the page and the code is rendered on the browser page, there is basic default styling that is applied by the browser itself.
+- Marking up content with proper elements help describe the content for the browser and assistive technologies (AT).
+- Without proper markup, the page may have visual styling effect, but it would have no meaning for Assistive Technologies and Search Engine Optimization (SEO).
+- We use HTML tags to provide further description of the content for assistive technologies.
+- Visual stylization in general is done through CSS.
+
+### Nesting Elements
+
+- 
