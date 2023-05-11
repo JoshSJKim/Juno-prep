@@ -176,5 +176,70 @@ Very Important!
 - Add attributes to HTML elements for more robust and dynamic use.
 - Attributes are added to the opening tag of an element to define class, id, type, value, etc.
 
-### Setting Up an HTML File
+---
+
+## HTML Elements
+
+### Typographic Elements
+
+#### Headings
+
+- Use `heading` as the main title of a page.
+- Headings have opening and closing tags
+- `<h1></h1> ... <h6></h6>`
+- There may only be one `<h1>` element per HTML page.
+- Sub-headings may use `<h2>` and so forth for content division.
+- Appearance and styling can be changed with CSS
+- Note that Assistive Technologies highly depend on hierarchy. Skipping headings can cause problems.
+- You may not skip heading sequence (ex. <h1>...<h3>).
+
+#### Paragraphs
+
+- use `<p></p>` to define a paragraph of text.
+- `Paragraphs` have opening and closing tags.
+- `inline` elements, such as `<span>`, `<em>`, `<strong>` may be used in the `paragraph` element.
+
+#### Anchor Elements
+
+- `Anchor` elements are used to create `links` to other web pages or specific places within the same website.
+- It is an inline element and requires opening and closing tags.
+- Anchor elements require an `href` attribute that tells the link where to go when clicked.
+- The text wrapped with the `<a></a>` tags will serve as the link on the webpage.
+  
+##### Linking Externally
+
+```html
+<div>
+  <p>For more information, contact us at <a href="https://www.junocollege.com/contact">Juno College</a>.</p>
+</div>
+```
+
+- The above code will provide a hypertext link to the external website specified in the `href`, where the text 'Juno College' will serve as the link.
+
+##### Linking Internally
+
+- You may have a multi-page website.
+- A link to an internal page is called a relative link.
+- Ensure that all html files are saved in the same folder. (ex. index.html and about.html in a folder called 'myWebsite')
+
+```html
+<a href="about.html">About</a>
+```
+
+- The above code may be used for a link to a separate personal bio page.
+- This code would be written in the `index.html` file.
+
+- It is best practice to name the main html file `index.html`.
+- It is the industry standard, and it is also the name that servers will look for by default.
+
+##### Opening Links in a New Window
+
+- Without specifying, the links above will open in the current window.
+- In order to open the link in a new tab or a new window automatically, use the `target` attribute and set its value to `_blank`.
+
+```html
+<a href="https://www.google.com" target="_blank">Google.com</a>
+```
+
+
 
