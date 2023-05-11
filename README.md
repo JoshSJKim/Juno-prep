@@ -351,3 +351,49 @@ Very Important!
 - `<nav>`: Navigation. Usually placed at the top of a page, and footer for page navigation.
 - `<section>`: Defines different sections of a page. Elements nested in the `section` element are generally related.
 - `<footer>`: Information such as 'About', 'Contact us', 'Directions', legal stuff, etc. The footer is placed outside of the `main` element.
+
+## Intro to CSS
+
+### What is CSS?
+
+- Cascading Stylesheets.
+- Used to add visual attractiveness to web pages by adding styles to the html code.
+
+#### CSS Syntax
+
+- CSS is made up of rules that dictate which element(s) to manipulate and how.
+- Two key parts to a CSS rule:
+  - Selector: Selector could target an individual element (`h1`), a type of element (all `p` elements), a class (if defined in the opening tag of any element using the `class` attribute), or by `id` (in a manner similar to `class`).
+  - Declaration: written inside curly braces, and it specifies the property (type of manipulation) and value (how to manipulate). The property and value should be separated by a colon and finish with a semi-colon.
+
+#### Colors in CSS
+
+- There are several ways to define the color value in CSS
+  - named
+  - RGB
+  - hsla
+
+#### Where to Write CSS
+
+##### Internal Stylesheet
+
+- It is written directly in the `<head>` portion of the html file.
+- All CSS code will be wrapped in the `<style></style>` element within the `<head>` element.
+- It will work anywhere on the page, but it is best practice to place it in the `<head>` element.
+
+##### Inline Styles
+
+- inline styles are written directly in the opening tag of the elements that you wish to manipulate by using the `style` attribute.
+- It is not efficient, not easy to read.
+
+##### Adding a Separate Stylesheet.
+
+- You could write a separate CSS file (`styles.css`) and save it in the same folder as the `index.html` file.
+- Then add a `<link>` element in the `<head>` element that points to the `styles.css` file.
+
+```html
+<link rel="stylesheet" href="styles.css">
+```
+
+- This is useful when the project becomes very large and the code gets lengthy.
+- By separating the html and css files, it can be more readable and organized.
