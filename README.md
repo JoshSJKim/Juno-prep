@@ -154,4 +154,19 @@ Very Important!
 
 ### Nesting Elements
 
-- 
+- Nesting is an important concept in coding because it represents a parent-child relationship between elements.
+- When nesting elements, it must always be closed in reverse order that was opened. Otherwise, the page may not load properly.
+
+### Indentation
+
+- When nesting, it is best practice to apply proper indentation to show structure and improve readability.
+- Some exceptions apply to `inline` elements, such as `<span>`, `<em>`, etc.
+
+### HTML Comments
+
+- Commenting is a handy tool to stay organized while coding.
+- It is also used to make notes, either for personal use, or to provide instructions or information for other developers viewing the code.
+- Remember, comments will not be rendered on the browser page.
+
+- `<!-- comment here -->` is the commenting syntax for HTML.
+- Use `command` + `/` for shortcut
