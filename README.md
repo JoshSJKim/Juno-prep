@@ -191,7 +191,7 @@ Very Important!
 - Sub-headings may use `<h2>` and so forth for content division.
 - Appearance and styling can be changed with CSS
 - Note that Assistive Technologies highly depend on hierarchy. Skipping headings can cause problems.
-- You may not skip heading sequence (ex. <h1>...<h3>).
+- You may not skip heading sequence (ex. `<h1>...<h3>`).
 
 #### Paragraphs
 
@@ -241,5 +241,113 @@ Very Important!
 <a href="https://www.google.com" target="_blank">Google.com</a>
 ```
 
+#### Generic Elements
 
+- There are HTML elements that do not inherently have specific purpose.
+- These generic elements are used to group elements together for styling purposes.
 
+##### Span
+
+- Span element is an inline element.
+- It means that it takes up only the space it needs.
+- It is often found in the middle of typographic elements.
+- It has an opening and closing tag.
+- Span elements have no semantic meaning.
+
+```html
+<div>
+  <p>This is an example of how to use the <span class="example">Span</span> element</p>
+</div>
+```
+
+- You could use `class` or `id` attributes in the opening `<span>` tag to target the specified class or id in the CSS file and add styling to the text that is nested in the span element.
+
+- Accessibility Tip: If the class attribute in the span element is used to apply a color to the text for emphasis, applying color will have no meaning in terms of AT (for the visually impaired for instance). In order to emphasize a certain part of the text that would also be interpreted in terms of AT, using the `<em>` element would be a better option.
+
+##### Div
+
+- `Div` element (document division) is a block level element (meaning it takes up the entire width of the container) by default.
+- It is a generic structural element that does not have a specific semantic purpose.
+- It is generally used to define and divide content for organization, readability, and styling.
+- `div` elements are purely presentational and does not provide meaningful structural information for browsers and AT.
+- It is like a 'Jack of all trades'.
+- Sometimes there may not be a specific element that is suitable for the content of the html code.
+- When in doubt, use `div`.
+- It can be used to nest other content elements and apply `class` or `id` attributes for styling in the CSS file, just like the `<span>` elements.
+- It takes an opening and closing tag.
+
+```html
+<div class="container">
+  <h1>This is an example for a "div" container.</h1>
+  <p>All elements nested in the opening and closing 'div' tags are 'child' elements of the 'parent' div element.</p>
+  <p>Apply different styling (font size, color, background-color, border, etc.) to this container by targeting '.container' in the 'styles.css' file</p>
+</div>
+```
+
+#### Semantic Elements
+
+- Semantic HTML is markup that represent meaningful content structure to browsers and AT.
+- It is used to define the role of a content on the website.
+- `<h1>`, `<p>`, `<em>`... these are semantic elements that have explicit roles on a webpage.
+
+- Similar to essay writing, where an essay has a head (intro), body (separate sections), and a conclusion, html also has elements that describe specific sections of the code that is meaningful to the browser, AT, and SEO.
+- `<header>`, `<main>`, `<section>`, `<footer>`
+- Just by adding these elements to the html file, it has a semantic structure that is comprehensible by the browser, AT, and SEO, making it more user friendly and machine readable.
+
+```html
+<div>
+  <h1>Lorem ipsum dolor sit</h1>
+</div>
+<div>
+  <div>
+    <p>Lorem ipsum dolor sit amet, consectetum adipiscing elit.</p>
+    <p>Saepe enim fugit quo tempora! Facilis quos aperiam suscipit!</p>
+  </div>
+  <div>
+    <p>Quos veritatis numquam nesciunt delectus, atque at laborum.</p>
+    <p>Modi eos doloribus explicabo error deserunt nobis culpa.</p>
+  </div>
+</div>
+<div>
+  <p>Excepteur sint occaecat</p>
+</div>
+```
+
+```html
+<header>
+  <h1>Lorem ipsum dolor sit</h1>
+</header>
+<main>
+  <section>
+    <p>Lorem ipsum dolor sit amet, consectetum adipiscing elit.</p>
+    <p>Saepe enim fugit quo tempora! Facilis quos aperiam suscipit!</p>
+  </section>
+  <section>
+    <p>Quos veritatis numquam nesciunt delectus, atque at laborum.</p>
+    <p>Modi eos doloribus explicabo error deserunt nobis culpa.</p>
+  </section>
+</main>
+<footer>
+  <p>Excepteur sint occaecat</p>
+</footer>
+```
+
+- The first example only use `div` elements to divide sections of the code.
+- CSS can be applied to specify the role of the content.
+- But in terms of AT, it would be very meaningless.
+
+- The second example uses semantic elements to divide the different sections of the code.
+- Both of these codes would look identical on the browser when rendered.
+- But the second example would be more accessible, SEO, and easier and clearer for developers.
+
+- Using semantic elements is more concise and effective for describing the web content in comparison to the use of generic elements.
+- Always default to using semantic elements.
+
+##### Understanding Semantic Elements
+
+- `<header>`: Defines the header of a page or section. Often title of a page.
+- `<main>`: Used for main content of page.
+- `<ul>, <ol>, <li>`: unordered list, ordered list, list item.
+- `<nav>`: Navigation. Usually placed at the top of a page, and footer for page navigation.
+- `<section>`: Defines different sections of a page. Elements nested in the `section` element are generally related.
+- `<footer>`: Information such as 'About', 'Contact us', 'Directions', legal stuff, etc. The footer is placed outside of the `main` element.
