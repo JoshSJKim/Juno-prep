@@ -386,7 +386,7 @@ Very Important!
 - inline styles are written directly in the opening tag of the elements that you wish to manipulate by using the `style` attribute.
 - It is not efficient, not easy to read.
 
-##### Adding a Separate Stylesheet.
+##### Adding a Separate Stylesheet
 
 - You could write a separate CSS file (`styles.css`) and save it in the same folder as the `index.html` file.
 - Then add a `<link>` element in the `<head>` element that points to the `styles.css` file.
